@@ -11,7 +11,7 @@ email                : morb at ozemail dot com dot au
  *   the Free Software Foundation; either version 2 of the License, or     *
  *   (at your option) any later version.                                   *
  *                                                                         *
- ***************************************************************************/
+ **************************************************************************/
 
 #ifndef QGSGEOMETRY_H
 #define QGSGEOMETRY_H
