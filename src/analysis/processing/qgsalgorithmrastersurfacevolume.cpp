@@ -187,8 +187,24 @@ QVariantMap QgsRasterSurfaceVolumeAlgorithm::processAlgorithm( const QVariantMap
             }
             continue;
 
+          case CountAboveBaseLevelIncludingBaseLevel:
+            if ( z >= 0.0 )
+            {
+              volume += z;
+              count++;
+            }
+            continue;
+
           case CountOnlyBelowBaseLevel:
             if ( z < 0.0 )
+            {
+              volume += z;
+              count++;
+            }
+            continue;
+
+          case CountBelowBaseLevelIncludingBaseLevel:
+            if ( z <= 0.0 )
             {
               volume += z;
               count++;

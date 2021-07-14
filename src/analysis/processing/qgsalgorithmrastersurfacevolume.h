@@ -55,7 +55,10 @@ class QgsRasterSurfaceVolumeAlgorithm : public QgsProcessingAlgorithm
     enum Method
     {
       CountOnlyAboveBaseLevel = 0,
+      CountAboveBaseLevelIncludingBaseLevel,
       CountOnlyBelowBaseLevel,
+      CountBelowBaseLevelIncludingBaseLevel,
+      CountAboveBelowBaseLevelIncludingBaseLevel,
       SubtractVolumesBelowBaseLevel,
       AddVolumesBelowBaseLevel
     };
